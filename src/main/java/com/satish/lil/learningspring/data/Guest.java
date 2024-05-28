@@ -6,8 +6,8 @@ import jakarta.persistence.*;
 @Table(name="GUEST")
 public class Guest {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="GUEST_ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long guestId;
     @Column(name="FIRST_NAME")
     private String firstName;
@@ -91,7 +91,7 @@ public class Guest {
     @Override
     public String toString() {
         return "Guest{" +
-                "id=" + guestId +
+                "guestId=" + guestId +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
