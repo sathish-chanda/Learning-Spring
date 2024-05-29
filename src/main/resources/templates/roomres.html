@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>London Hotel: Room Reservations</title>
+</head>
+<body>
+  <h1>Welcome to the Reservations Page</h1>
+  <table>
+    <tr>
+      <td>Room</td>
+      <td>Room Number</td>
+      <td>Guest</td>
+    </tr>
+    <tr th:each="roomReservation : ${roomReservations}"> <!-- Create instance of some model called roomReservations or get the model roomReservation -->
+        <td th:text="${roomReservation.roomName}">Room Name</td> <!-- Even though we have dynamic data. We are adding the data to make it work when the website is when it is not running. This will act as a dummy data. It renders as a fully qualified html. -->
+        <td th:text="${roomReservation.roomNumber}">Room Number</td>
+        <td th:text="${roomReservation.lastName} != null ? ${roomReservation.lastName} + ', ' + ${roomReservation.firstName} : 'VACANT'">Guest</td> <!-- We can also write the logic like this -->
+    </tr>
+  </table>
+</body>
+</html>

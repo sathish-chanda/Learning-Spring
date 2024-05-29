@@ -13,7 +13,6 @@ import com.satish.lil.learningspring.data.Reservation;
 import com.satish.lil.learningspring.data.ReservationRepository;
 import com.satish.lil.learningspring.data.Room;
 import com.satish.lil.learningspring.data.RoomRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

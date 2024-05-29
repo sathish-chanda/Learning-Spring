@@ -5,14 +5,9 @@ import java.util.List;
 
 import com.satish.lil.learningspring.business.ReservationService;
 import com.satish.lil.learningspring.business.RoomReservation;
-import com.satish.lil.learningspring.data.Guest;
-import com.satish.lil.learningspring.data.Reservation;
-import com.satish.lil.learningspring.data.Room;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
-import  com.satish.lil.learningspring.util.DateUtils;
 
 @Component
 public class AppStartupEvent implements ApplicationListener<ApplicationReadyEvent> {
