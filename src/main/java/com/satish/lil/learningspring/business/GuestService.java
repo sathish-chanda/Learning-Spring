@@ -16,4 +16,8 @@ public class GuestService {
     public List<Guest> getAllGuests() {
         return guestRepository.findAll();
     }
+
+    public void addGuest(Guest guest) {
+        guestRepository.save(guest);
+    }
 }
